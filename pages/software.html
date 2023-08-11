@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <title>i hate software</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+/* cry about it */
+h2 {
+  margin-top: 2em;
+}
+    </style>
   </head>
   <body>
     <a href="../index.html">home</a>
@@ -13,12 +19,89 @@
       encountered while using software. be sure to create a pr if you see
       something missing 🙂
     </div>
+
+
+    <h2>2021-08-09</h2>
+
+    <h3>explorer.exe: try to get to user directory challenge (impossible)</h3>
+    you are just unable to get to your home directory easily.
+    these are the workarounds you can use:
+    <ul>
+      <li>
+        win+r <code>%userprofile%</code>
+      </li>
+      <li>
+        <code>%userprofile%</code> in explorer address bar
+      </li>
+      <li>
+        just going into <code>SystemDrive:\Users\username</code>
+        (you can get into drive view by default if you change explorer's
+        settings)
+      </li>
+      <li>
+        win+r <code>wt</code> -&gt; <code>start .</code> (this is my
+        favorite)
+      </li>
+      <li>
+        pin user directory to quick access (i never use that even tho i have
+        it pinned)
+      </li>
+    </ul>
     <p>
-    last update: 2023-08-09 (history and what was added when in git)
+    unrelated note: entering <code>~</code> in explorer address bar will
+    open the browser with <code>~</code> as the url
+    </p>
+    <p>
+    related note: you can't just enter documents folder (which is in quick
+    access by default) and go one directory up. it doesn't work. for no
+    reason.
+    </p>
+    <p>
+    more info: <a href="https://youtu.be/0FyoGlHDklk">https://youtu.be/0FyoGlHDklk</a>
     </p>
 
-    <h2>windows</h2>
-    <h3>virtual desktop touchpad</h3>
+    <h3>windows user switch underline</h3>
+    win11 has a colored underline under the password field when switching
+    users. it's supposed to have a color of the selected user's accent
+    color, but you can break it by:
+    <ol>
+      <li>logging out</li>
+      <li>clicking on other user</li>
+      <li>clicking on the user you logged out from</li>
+    </ol>
+    now it is colored with the other user's accent color.
+
+    <h3>:slight_smile:</h3>
+    <img src="../images/software/mixer.png" alt="volume mixer (not responding)">
+
+
+    <h2>2021-08-08</h2>
+
+    <h3>recycle bin</h3>
+    <p>
+    apparently i can't open recycle bin without a desktop icon (by "normal"
+    means). i need to win+r <code>shell:RecycleBinFolder</code>. wow.
+    </p>
+    <p>
+    unrelated note, why can't i preview folder contents in recycle bin?
+    i need to restore it? what if i don't want to restore it in the same
+    place or there are new files with same names already?
+    </p>
+
+    <h3>git uninstall</h3>
+    <p>
+    after uninstall i was left with a few files in
+    <code>C:\Program Files\Git</code>
+    </p>
+    <p>
+    also, i uninstalled it because ssh auth stopped working for some reason.
+    that might be my bad tho so it's not included in this list.
+    </p>
+
+
+    <h2>2023-08-07</h2>
+
+    <h3>windows virtual desktop touchpad handling</h3>
     <p>
     when i try to switch virutal desktop by swiping 4 fingers on touchpad,
     sometimes i start with only 3. then when i add a 4th one the usual
@@ -43,115 +126,41 @@
           yes i know i have ahk shortcut for that i don't use it
         </li>
       </ol>
-
-      <h3>taskbar gap</h3>
-      <p>
-      on my win10 laptop there is a single pixel under the taskbar that
-      prevents me from moving my mouse all the way down when trying to switch
-      to different window (i use small taskbar icons with enabled labels
-      so they're supposed to be easy to select with little precision).
-      it just doesn't click them; i have to move my mouse up a little.
-      </p>
-      <p>
-      note: this actually is using a mouse
-      </p>
-      <p>
-      i just fixed it by toggling auto hide taskbar on and off XDD<br>
-      let's see if it caries over after restart...
-      </p>
-      <p>
-      update: it does not
-      </p>
-
-      <h3>recycle bin</h3>
-      <p>
-      apparently i can't open recycle bin without a desktop icon (by "normal"
-      means). i need to win+r <code>shell:RecycleBinFolder</code>. wow.
-      </p>
-      <p>
-      unrelated note, why can't i preview folder contents in recycle bin?
-      i need to restore it? what if i don't want to restore it in the same
-      place or there are new files with same names already?
-      </p>
-
-      <h3>user switch underline</h3>
-      win11 has a colored underline under the password field when switching
-      users. it's supposed to have a color of the selected user's accent
-      color, but you can break it by:
-      <ol>
-        <li> logging out</li>
-        <li> clicking on other user</li>
-        <li> clicking on the user you logged out from</li>
-      </ol>
-      now it is colored with the other user's accent color.
-
-      <h3>:slight_smile:</h3>
-      <img src="../images/software/mixer.png" alt="volume mixer (not responding)">
-
-      <h2>explorer.exe</h2>
-      yes, it gets a separate section
-
-      <h3>try to get to user directory challenge (impossible)</h3>
-      you are just unable to get to your home directory easily.
-      these are the workarounds you can use:
-      <ul>
-        <li>
-          win+r <code>%userprofile%</code>
-        </li>
-        <li>
-          <code>%userprofile%</code> in explorer address bar
-        </li>
-        <li>
-          just going into <code>SystemDrive:\Users\username</code>
-          (you can get into drive view by default if you change explorer's
-          settings)
-        </li>
-        <li>
-          win+r <code>wt</code> -&gt; <code>start .</code> (this is my
-          favorite)
-        </li>
-        <li>
-          pin user directory to quick access (i never use that even tho i have
-          it pinned)
-        </li>
-      </ul>
-      <p>
-      unrelated note: entering <code>~</code> in explorer address bar will
-      open the browser with <code>~</code> as the url
-      </p>
-      <p>
-      related note: you can't just enter documents folder (which is in quick
-      access by default) and go one directory up. it doesn't work. for no
-      reason.
-      </p>
-
-      <h2>spotify</h2>
-      <h3>maximize</h3>
-      <p>
-      win+up doesn't maximize a spotify window if it's too big. exact reason
-      tbd (it does work on "stock" win11, didn't check with explorer patch i
-      use tho).
-      </p>
-      <p>
-      update: spotify checks if it's maximized by comparing window size to
-      screen size. so if it's bigger than available space (which is easy to do
-      on windows and happens automagically on my laptop) it won't maximize.
-      </p>
-      <p>
-      update 2: no it doesn't. i managed to make it not work just now but i
-      can't reproduce it. epico.
-      </p>
-      <h2>git</h2>
-      <h3>uninstall</h3>
-      <p>
-      after uninstall i was left with a few files in
-      <code>C:\Program Files\Git</code> (guess how i found out about no recycle
-      bin thing)
-      </p>
-      <p>
-      also, i uninstalled it because ssh auth stopped working for some reason.
-      that might be my bad tho so it's not included in this list.
-      </p>
     </div>
+
+    <h3>windows taskbar gap</h3>
+    <p>
+    on my win10 laptop there is a single pixel under the taskbar that
+    prevents me from moving my mouse all the way down when trying to switch
+    to different window (i use small taskbar icons with enabled labels
+    so they're supposed to be easy to select with little precision).
+    it just doesn't click them; i have to move my mouse up a little.
+    </p>
+    <p>
+    note: this actually is using a mouse
+    </p>
+    <p>
+    i just fixed it by toggling auto hide taskbar on and off XDD<br>
+    let's see if it caries over after restart...
+    </p>
+    <p>
+    update: it does not
+    </p>
+
+    <h3>spotify maximize</h3>
+    <p>
+    win+up doesn't maximize a spotify window if it's too big. exact reason
+    tbd (it does work on "stock" win11, didn't check with explorer patch i
+    use tho).
+    </p>
+    <p>
+    update: spotify checks if it's maximized by comparing window size to
+    screen size. so if it's bigger than available space (which is easy to do
+    on windows and happens automagically on my laptop) it won't maximize.
+    </p>
+    <p>
+    update 2: no it doesn't. i managed to make it not work just now but i
+    can't reproduce it. epico.
+    </p>
   </body>
 </html>
