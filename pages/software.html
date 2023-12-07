@@ -5,12 +5,27 @@
         <title>i hate software</title>
         <link rel="stylesheet" href="../style.css">
 <style>
-h2 {
-    margin-top: 4em;
-}
 h3 {
     margin-top: 2em;
 }
+
+.date {
+    display: inline-block;
+    margin-top: 3em;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.date:before {
+    content: "## ";
+}
+
+.date:hover {
+    background-color: white;
+    color: black;
+}
+
 </style>
     </head>
     <body>
@@ -25,7 +40,7 @@ h3 {
             important missing
         </div>
 
-        <h2 id="2023-11-16">2023-11-16</h2>
+        <a class="date" href="#2023-11-16" id="2023-11-16">2023-11-16</a>
 
         <h3>youtube lazy load</h3>
         <p>
@@ -35,25 +50,26 @@ h3 {
         also, it sometimes does not load it at all
         </p>
 
-        <h2 id="2023-11-06">2023-11-06</h2>
+        <a class="date" href="#2023-11-06" id="2023-11-06">2023-11-06</a>
 
         <h3>windows calculator</h3>
         <p>
         you can use ctrl+c/ctrl+v to copy/paste values from/to calculator. you can
         get a value that you can copy, but it is too long to paste in (it results
         in "invalid input").
+        </p>
 
-        <h2 id="2023-11-05">2023-11-05</h2>
+        <a class="date" href="#2023-11-05" id="2023-11-05">2023-11-05</a>
 
         <h3>firefox address bar (or whatever that's called)</h3>
         <p>
         you can focus the "address bar" by hitting ctrl+l. the issue is that
         sometimes it selects all the content, but other times it does not, so
         additional ctrl+a before typing is needed (maybe i should remap ctrl+l
-        to ctrl+l -> ctrl+a in ahk when ff is focused).
+        to ctrl+l -&gt; ctrl+a in ahk when ff is focused).
         </p>
 
-        <h2 id="2023-11-04">2023-11-04</h2>
+        <a class="date" href="#2023-11-04" id="2023-11-04">2023-11-04</a>
 
         <h3>google messages</h3>
         <p>
@@ -79,7 +95,7 @@ h3 {
         (btw the pun above was very intended)
         </p>
 
-        <h2 id="2023-11-01">2023-11-01</h2>
+        <a class="date" href="#2023-11-01" id="2023-11-01">2023-11-01</a>
 
         <h3>discord image formats</h3>
         <p>
@@ -87,7 +103,7 @@ h3 {
         webp.
         </p>
 
-        <h2 id="2023-10-28">2023-10-28</h2>
+        <a class="date" href="#2023-10-28" id="2023-10-28">2023-10-28</a>
 
         <h3>locked out</h3>
         <p>
@@ -126,8 +142,10 @@ h3 {
         </p>
 
 
-        <h2 id="2023-09-10">2023-09-10</h2>
+        <a class="date" href="#2023-09-10" id="2023-09-10">2023-09-10</a>
+        <p>
         okay i have a few today
+        </p>
 
         <h3>📱 softlock</h3>
         <p>
@@ -147,15 +165,17 @@ h3 {
         </p>
 
 
-        <h2 id="2023-09-02">2023-09-02</h2>
+        <a class="date" href="#2023-09-02" id="2023-09-02">2023-09-02</a>
         <h3>do not disturb</h3>
-        <video height="480" controls>
-            <source src="../res/software/do-not-disturb.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div>
+            <video height="480" controls>
+                <source src="../res/software/do-not-disturb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
 
-        <h2 id="2023-08-29">2023-08-29</h2>
+        <a class="date" href="#2023-08-29" id="2023-08-29">2023-08-29</a>
         <h3>github mobile</h3>
         <p>
         github's ux team made the decision (or didn't, it may as well have been
@@ -172,7 +192,7 @@ h3 {
         </p>
 
 
-        <h2 id="2023-08-26">2023-08-26</h2>
+        <a class="date" href="#2023-08-26" id="2023-08-26">2023-08-26</a>
         <h3>title</h3>
         <p>
         imagine you have a windows 10, and you've opened settings page that lists
@@ -202,7 +222,7 @@ h3 {
         </p>
 
 
-        <h2 id="2023-08-25">2023-08-25</h2>
+        <a class="date" href="#2023-08-25" id="2023-08-25">2023-08-25</a>
         <h3>bluetooth</h3>
         <p>
         in windows 10, there is no visible indicator for if the bluetooth
@@ -218,7 +238,7 @@ h3 {
         </p>
 
 
-        <h2 id="2023-08-24">2023-08-24</h2>
+        <a class="date" href="#2023-08-24" id="2023-08-24">2023-08-24</a>
         <h3>discord navigation</h3>
         <p>
         i am slowly getting thru my backlog of annoyances, and one of the old ones
@@ -260,7 +280,7 @@ h3 {
         </p>
 
 
-        <h2 id="2023-08-21">2023-08-21</h2>
+        <a class="date" href="#2023-08-21" id="2023-08-21">2023-08-21</a>
         <h3>discord hates user experience</h3>
         <p>
         check out the following recipe for system usability disaster:
@@ -282,7 +302,7 @@ h3 {
         </p>
 
 
-        <h2 id="2023-08-14">2023-08-14</h2>
+        <a class="date" href="#2023-08-14" id="2023-08-14">2023-08-14</a>
         <h3>youtube channel clicking</h3>
         <p>
         there is this nice feature on the youtube websites that lets you click
@@ -294,7 +314,7 @@ h3 {
         </p>
 
 
-        <h2 id="2023-08-12">2023-08-12</h2>
+        <a class="date" href="#2023-08-12" id="2023-08-12">2023-08-12</a>
         <h3>firefox mobile's very questionable design choice</h3>
         <p>
         i don't know if it's a bug or not, but for the love of god why does
@@ -306,7 +326,7 @@ h3 {
         </p>
 
 
-        <h2 id="2023-08-11">2023-08-11</h2>
+        <a class="date" href="#2023-08-11" id="2023-08-11">2023-08-11</a>
 
         <h3>win+tab doesn't work</h3>
         <p>
@@ -334,7 +354,7 @@ h3 {
         </p>
 
 
-        <h2 id="2023-08-09">2023-08-09</h2>
+        <a class="date" href="#2023-08-09" id="2023-08-09">2023-08-09</a>
 
         <h3>explorer.exe: try to get to user directory challenge (impossible)</h3>
         you are just unable to get to your home directory easily.
@@ -373,6 +393,7 @@ h3 {
         more info: <a href="https://youtu.be/0FyoGlHDklk">https://youtu.be/0FyoGlHDklk</a>
         </p>
 
+        <del>
         <h3>windows user switch underline</h3>
         win11 has a colored underline under the password field when switching
         users. it's supposed to have a color of the selected user's accent
@@ -383,12 +404,18 @@ h3 {
             <li>clicking on the user you logged out from</li>
         </ol>
         now it is colored with the other user's accent color.
+        </del>
+        <aside>
+            <p>removed due to insufficient impact on user experience</p>
+        </aside>
 
         <h3>:slight_smile:</h3>
-        <img src="../res/software/mixer.png" alt="volume mixer (not responding)">
+        <div>
+            <img src="../res/software/mixer.png" alt="volume mixer (not responding)">
+        </div>
 
 
-        <h2 id="2023-08-08">2023-08-08</h2>
+        <a class="date" href="#2023-08-08" id="2023-08-08">2023-08-08</a>
 
         <h3>recycle bin</h3>
         <p>
@@ -412,7 +439,7 @@ h3 {
         </p>
 
 
-        <h2 id="2023-08-07">2023-08-07</h2>
+        <a class="date" href="#2023-08-07" id="2023-08-07">2023-08-07</a>
 
         <h3>windows virtual desktop touchpad handling</h3>
         <p>

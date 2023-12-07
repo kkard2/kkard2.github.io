@@ -2,7 +2,7 @@ body {
     background: black;
     color: #ddd;
     font-family: monospace, monospace;
-    font-size: 14px;
+    font-size: 16px;
     max-width: 80ch;
     align: center;
     margin-left: auto;
@@ -36,7 +36,7 @@ h3 {
     color: white;
     margin-top: 2em;
     margin-bottom: 1em;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 1100;
     line-height: 1.2;
 }
@@ -63,6 +63,11 @@ ul > li:before {
     content: " - ";
 }
 
+ol {
+    padding: 0;
+    padding-left: 4ch;
+}
+
 a {
     color: #f0f;
 }
@@ -70,4 +75,19 @@ a {
 a:hover {
     color: #000;
     background: #f0f;
+}
+
+code {
+    display: inline-block;
+    background: #111;
+    border: solid gray;
+    border-width: 1px;
+}
+
+aside {
+    color: #0ff;
+}
+
+aside > p:before {
+    content: "> ";
 }
