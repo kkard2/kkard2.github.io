@@ -64,10 +64,10 @@ ul > li:before {
 }
 
 a {
-    color: #0ff;
+    color: #f0f;
 }
 
 a:hover {
     color: #000;
-    background: #0ff;
+    background: #f0f;
 }
