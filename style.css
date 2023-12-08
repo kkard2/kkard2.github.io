@@ -8,6 +8,11 @@ body {
     line-height: 1.2;
 }
 
+::selection {
+    color: white;
+    background: #f0f;
+}
+
 header {
     text-align: right;
 }
