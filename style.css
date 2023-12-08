@@ -12,28 +12,6 @@ body {
     color: white;
     background: #f0f;
 }
-
-header {
-    text-align: right;
-}
-
-header > a {
-    text-decoration: none;
-    margin-left: 1ch;
-}
-
-header:before {
-    display: block;
-    content: "================================================================================";
-    overflow: hidden;
-}
-
-header:after {
-    display: block;
-    content: "================================================================================";
-    overflow: hidden;
-}
-
 h1,
 h2,
 h3 {
@@ -94,4 +72,14 @@ aside {
 
 aside > p:before {
     content: "> ";
+}
+
+.notheader {
+    width: 100%;
+    height: 80px;
+}
+
+.notheader object {
+    width: 100%;
+    height: 80px;
 }
