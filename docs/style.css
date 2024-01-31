@@ -74,12 +74,24 @@ aside > p:before {
     content: "> ";
 }
 
-.notheader {
-    width: 100%;
-    height: 80px;
+header {
+    text-align: right;
+    width: round(min(100%, 80ch), 1ch);
 }
 
-.notheader object {
-    width: 100%;
-    height: 80px;
+header > a {
+    text-decoration: none;
+    margin-left: 1ch;
+}
+
+header:before {
+    display: block;
+    content: "================================================================================";
+    overflow: hidden;
+}
+
+header:after {
+    display: block;
+    content: "================================================================================";
+    overflow: hidden;
 }
