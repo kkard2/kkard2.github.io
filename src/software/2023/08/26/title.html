@@ -1,0 +1,27 @@
+<h3>title</h3>
+<p>
+imagine you have a windows 10, and you've opened settings page that lists
+bluetooth devices. the list detects the paired devices (for about 1 second
+for unknown to me reason) and displays them to you. then, you switch to
+another workspace, and go back. all devices disappear and are "searched
+for" again.
+</p>
+<p>
+it is even more infuriating, because while the animation of
+workspace switch is playing, the list is still there, and it disappears
+right at the end.
+</p>
+<p>
+i don't even know what it does while doing it. the list has all paired
+devices, regardless if they are on or off, so it must be fetching data via
+stupid asynchronous protocol from rest api or some shit like that (even
+then it's suspiciously slow). i hate this. just read a file with json and
+display it.
+</p>
+<p>
+also, don't refresh it every time i do something, that's
+important too.
+</p>
+<p>
+update: it also does this if you minimize the settings window
+</p>
