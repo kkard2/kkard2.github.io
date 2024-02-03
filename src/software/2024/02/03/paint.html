@@ -1,0 +1,32 @@
+<h3>paint (new paint)</h3>
+<p>
+z ordering for text tool popup window does not exist. any other modal window
+(that is modern style, save file does not exert this behavior) goes below it.
+try to exit with unsaved changes and drag it "over" the aforementioned popup.
+</p>
+<p>
+altho, if you click the (disabled) main window and focus modal again, then it
+goes over the popup. maybe that's why popup disappears and appears again when
+you open a "native" save dialog /s.
+</p>
+<p>
+don't worry tho, the popup is not disabled by itself. so you can click a combo
+box, and it has a separate z order! imagine how many combinations of windows
+over windows you can get in this way (it's 3).
+</p>
+<p>
+i tried recreating this behavior in wpf for 5 minutes with no luck (i think
+new mspaint uses winui3 but i ain't installing that), so i assume it's either
+complete incompetence or newer microsoft ui frameworks being worse (who would
+have thought).
+</p>
+<p>
+ah, almost forgot. combo box doesn't close if you click on a non-interactive
+part of the text tool popup. in other parts of this app it works the way that
+any other windows app does. maybe it's because it has editable text? just a
+guess...
+</p>
+<p>
+besides that i have have some issues with the ux of the redesign, but these are
+more subjective so i'm saving them for a separate time.
+</p>
