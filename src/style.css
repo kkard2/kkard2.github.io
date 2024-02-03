@@ -52,11 +52,20 @@ ol {
 
 a {
     color: #f0f;
+    white-space: nowrap;
 }
 
 a:hover {
     color: #000;
     background: #f0f;
+}
+
+a.wrap {
+    white-space: normal;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
 
 code {
@@ -80,6 +89,7 @@ header {
 }
 
 header > a {
+    display: inline-block;
     text-decoration: none;
     margin-left: 1ch;
 }
