@@ -105,3 +105,8 @@ header:after {
     content: "================================================================================";
     overflow: hidden;
 }
+
+.scroll-container {
+    width: round(min(100%, 80ch), 1ch);
+    overflow-x: auto;
+}
