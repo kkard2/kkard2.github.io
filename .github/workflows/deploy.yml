@@ -14,6 +14,8 @@ jobs:
       with:
         python-version: '3.10'
     - run: python deploy.py
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
     - run: |
         cd docs
         git init
@@ -24,8 +26,6 @@ jobs:
     - name: Force push to destination branch
       uses: ad-m/github-push-action@v0.8.0
       with:
-        # Token for the repo
-        # Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
         force: true
