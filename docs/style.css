@@ -23,15 +23,15 @@ h3 {
     line-height: 1.2;
 }
 
-h1:before {
+h1::before {
     content: "# ";
 }
 
-h2:before {
+h2::before {
     content: "## ";
 }
 
-h3:before {
+h3::before {
     content: "### ";
 }
 
@@ -41,7 +41,7 @@ ul {
     padding-left: 1ch;
 }
 
-ul > li:before {
+ul > li::before {
     content: " - ";
 }
 
@@ -79,7 +79,7 @@ aside {
     color: #0ff;
 }
 
-aside > p:before {
+aside > p::before {
     content: "> ";
 }
 
@@ -94,13 +94,13 @@ header > a {
     margin-left: 1ch;
 }
 
-header:before {
+header::before {
     display: block;
     content: "================================================================================";
     overflow: hidden;
 }
 
-header:after {
+header::after {
     display: block;
     content: "================================================================================";
     overflow: hidden;
@@ -109,4 +109,38 @@ header:after {
 .scroll-container {
     width: round(min(100%, 80ch), 1ch);
     overflow-x: auto;
+}
+
+.comment::before {
+    content: "\/* "
+}
+
+.comment::after {
+    content: " */"
+}
+
+.comment {
+    color: #777777;
+}
+
+/* yes, this solution is stupid */
+
+@media only screen and (max-width: 45ch) {
+    header {
+        text-align: left;
+    }
+
+    header > a {
+        display: block;
+    }
+}
+
+@media only screen and not (max-width: 45ch) {
+    header > a.filesystem-root::before {
+        content: "\2003";
+    }
+
+    header > a.filesystem-root::after {
+        content: "\2003";
+    }
 }
