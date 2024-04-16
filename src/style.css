@@ -12,6 +12,7 @@ body {
     color: white;
     background: #f0f;
 }
+
 h1,
 h2,
 h3 {
@@ -122,6 +123,39 @@ header::after {
 .comment {
     color: #777777;
 }
+
+
+a.clean {
+    text-decoration: none;
+}
+
+a > h1 {
+    display: inline-block;
+}
+
+a > h1:hover {
+    background-color: white;
+    color: black;
+}
+
+a > h2 {
+    display: inline-block;
+}
+
+a > h2:hover {
+    background-color: white;
+    color: black;
+}
+
+a > h3 {
+    display: inline-block;
+}
+
+a > h3:hover {
+    background-color: white;
+    color: black;
+}
+
 
 /* yes, this solution is stupid */
 
