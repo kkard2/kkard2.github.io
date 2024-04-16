@@ -1,0 +1,32 @@
+name: Deploy to GitHub pages
+on:
+  push:
+    # this is the branch where you develop your site
+    # as discussed in the publishing sources section
+    # this can change if you are using an user/organization repo
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    - run: python deploy.py
+    - run: |
+        cd docs
+        git init
+        git add -A
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m 'deploy'
+    - name: Force push to destination branch
+      uses: ad-m/github-push-action@v0.8.0
+      with:
+        # Token for the repo
+        # Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+        force: true
+        directory: ./docs
