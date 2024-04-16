@@ -13,9 +13,8 @@ jobs:
     - uses: actions/setup-python@v5
       with:
         python-version: '3.10'
-    - run: python deploy.py
-      with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    - run: python deploy.py
     - run: |
         cd docs
         git init
