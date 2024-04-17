@@ -125,35 +125,45 @@ header::after {
 }
 
 
-a.clean {
+a.id-link {
     text-decoration: none;
+    color: white;
 }
 
-a > h1 {
-    display: inline-block;
+a.id-link > h1 {
+    display: block;
+    max-width: fit-content;
 }
 
-a > h1:hover {
+a.id-link > h1:hover {
+    display: block;
     background-color: white;
     color: black;
+    max-width: fit-content;
 }
 
-a > h2 {
-    display: inline-block;
+a.id-link > h2 {
+    display: block;
+    max-width: fit-content;
 }
 
-a > h2:hover {
+a.id-link > h2:hover {
+    display: block;
     background-color: white;
     color: black;
+    max-width: fit-content;
 }
 
-a > h3 {
-    display: inline-block;
+a.id-link > h3 {
+    display: block;
+    max-width: fit-content;
 }
 
-a > h3:hover {
+a.id-link > h3:hover {
+    display: block;
     background-color: white;
     color: black;
+    max-width: fit-content;
 }
 
 
