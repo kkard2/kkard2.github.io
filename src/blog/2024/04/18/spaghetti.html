@@ -1,0 +1,178 @@
+<h1>unhealthy spaghetti</h1>
+<p>
+a few years ago i've watched a documentary about a person that died of food
+poisoning (tw: food poisoning). they've left some spaghetti on the table for a
+night and their roommate put it in the fridge in the morning. they didn't find
+the taste concerning (i also wouldn't) so they've died.
+</p>
+<p>
+this has nothing to do with the following but has to do with spaghetti.
+</p>
+
+<h2>preface (wip title)</h2>
+<p>
+i very much enjoy building systems commonly referred to as "spaghetti", even if
+i'm aware of unpleasent consequences it will put me in the future.
+</p>
+<p>
+for example, i've recently played factorio with a few friends and had to
+transport oil from one end of the base to another. if not for watchful eye of
+one person it would've been done by barrelling the liquid at extraction site,
+putting it in the logistic network and unbarrelling at a place where it was
+used.
+<del>
+    i've managed transporting green chips to red chips production input by
+    logistic robots tho.
+</del>
+</p>
+<p>
+but of course, this term is also used to describe systems related to my
+profession. putting actual job aside (not because i ship such code ofc) in my
+hobbying i've created quite a few software "solutions".
+</p>
+<p>
+one instance of "solution" crafting led me to the creation of static
+site generator for this website.
+</p>
+
+<h2>i don't like javascript</h2>
+<p>
+specifically how it's used. i mean, also the language, but mostly how it's
+used.
+</p>
+<p>
+there <strong>are</strong> valid uses for javascript. however most (i am
+exaggerating a lot) sites choose to make it a lazy loading hell. oh well.
+</p>
+<p>
+i've decided not to use javascript for this site for as long as i can. i've
+also decided not to rely on some bloated markdown static site generator.
+</p>
+<p>
+so i've rolled out my own.
+</p>
+
+<h2>actual start of the content?</h2>
+<p>
+clarification: i'm not using markdown. i'm rawdogging html+css stack like our
+ancestors did. but there is one issue; html+css has some limitations
+(limitations is plural because there are actually multiple issues).
+</p>
+
+<h3>#include &lt;iostring&gt;</h3>
+<p>
+i've touched upon this in the previous post, but i didn't clarify how scuffed
+the parsing is. to reiterate, i can do something like this in my html code:
+</p>
+<div class="scroll-container">
+    <code class="nowrap">
+        &lt;!-- #include software/2024/02/03/paint.html --&gt;
+    </code>
+</div>
+<p>
+but how is that parsed?
+</p>
+<div class="scroll-container">
+    <code class="block">for line in source:
+    if '&lt;!-- #include' in line:
+        include_file = line.split('&lt;!-- #include')[1]
+        include_file = include_file.split('--&gt;')[0].strip()
+        include_path = os.path.join(start_dir, include_file)
+        with open(include_path, 'r') as include_content:
+            content += include_content.read()
+    # ...
+    else:
+        content += line</code>
+</div>
+<p>
+yeah, i just check if a line includes <code>&lt;!-- #include</code> and do a
+few splits. so, if for example closing the comment is done in a separate line
+it just crashes (this is a reocurring theme in the script).
+</p>
+
+<h3>template&lt;typename T&gt;</h3>
+<p>
+so, every page has this nice navigation header at the top, and it would be
+pretty wet if i copy-pasted it to every html file i write. that's why i use a
+template file:
+</p>
+<div class="scroll-container">
+    <code class="block">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;##title##&lt;/title&gt;
+        &lt;link rel="stylesheet" href="/style.css"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;a href="/" class="filesystem-root"&gt;/&lt;/a&gt;
+            &lt;a href="/software"&gt;/software&lt;/a&gt;
+            &lt;a href="/blog"&gt;/blog&lt;/a&gt;
+            &lt;a href="/rss"&gt;/rss&lt;/a&gt;
+            &lt;a href="/people"&gt;/people&lt;/a&gt;
+        &lt;/header&gt;
+        &lt;div&gt;
+            ##content##
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code>
+</div>
+<p>
+i will not dwell on it because it's pretty self explenatory: just paste files
+in the place of <code class="nowrap">##content##</code> and change the title to
+file path (if it's not overriden by
+<code class="nowrap">&lt;!-- #title actual title --&gt;</code>
+</p>
+
+<h3>shiny new stuff</h3>
+<p>
+you can now click every <code class="nowrap">&lt;h1&gt;</code>,
+<code class="nowrap">&lt;h2&gt;</code> and
+<code class="nowrap">&lt;h3&gt;</code> tag! this will create a link to the
+specific part of a page. surely there is greater than zero probability that
+this will be used by someone in the future, right?
+</p>
+<p>
+regardless, i don't think i need to explain how it works. yes, you need the
+entire heading to be in a single line. yes, it will break if you have any class
+applied to the heading. i hope that's what everyone expected - just don't do
+those things! :d
+</p>
+
+<h2>what else?</h2>
+<p>
+oh yeah, i got rid of <code class="nowrap">docs/</code> directory from the
+source control. for some reason copying random code from the internet and
+pasting it into github workflow worked.
+</p>
+
+<h2>:qa</h2>
+<p>
+you can see the <code class="nowrap">deploy.py</code> in it's full glory
+<a href="https://github.com/kkard2/kkard2.github.io/blob/678d5e19f3716835c525791477b0a883db4319eb/deploy.py">here</a>.
+<p>
+also, i just realized how cool my screen looks right now, so this is the last
+thing in the real part of the post you will see (clickable):
+</p>
+<div>
+    <a href="/res/blog/vim-btw.png" target="_blank">
+        <img style="max-width: 100%;" src="/res/blog/vim-btw.png" alt="very cool image of vim with 3 windows opened running on arch btw in unstyled i3 session">
+    </a>
+</div>
+
+<aside>
+    <p>post scriptum (unreal part of the post)</p>
+
+    <p>
+    it took me 2 months, but i kept my promise. reading friends' sites was
+    quite a motivation, surprisingly, and it was fun to write. maybe next time
+    will be sooner? (like that's ever going to happen)
+    </p>
+    <p>
+    also, reading the complete post reveals to me that writing is kinda dry,
+    but it's probably lack of experience. maybe it will improve if i keep doing
+    this :copium:
+    </p>
+</aside>

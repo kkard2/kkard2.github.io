@@ -76,6 +76,10 @@ code {
     border-width: 1px;
 }
 
+code.block {
+    white-space: pre;
+}
+
 aside {
     color: #0ff;
 }
