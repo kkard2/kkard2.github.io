@@ -75,13 +75,15 @@ def process_autolinks(dest_file):
                         else:
                             new_line_content += '-'
 
-                    line_content_final = '<a class="id-link" id="'
+                    line_content_final = '<' + tag + '>'
+                    line_content_final += '<a class="id-link" id="'
                     line_content_final += new_line_content
                     line_content_final += '" href="#'
                     line_content_final += new_line_content
                     line_content_final += '">'
-                    line_content_final += linestr
-                    line_content_final += '</a>\n'
+                    line_content_final += line_content
+                    line_content_final += '</a>'
+                    line_content_final += '</' + tag + '>'
 
                     content += line_content_final
                     break

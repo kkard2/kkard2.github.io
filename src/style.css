@@ -135,37 +135,38 @@ a.id-link {
     white-space: normal;
 }
 
-a.id-link > h1 {
-    display: block;
+h1 > a.id-link {
+    display: inline-block;
     max-width: fit-content;
 }
 
-a.id-link > h1:hover {
-    display: block;
+h1 > a.id-link:hover {
+    display: inline-block;
     background-color: white;
     color: black;
     max-width: fit-content;
 }
 
-a.id-link > h2 {
-    display: block;
+
+h2 > a.id-link {
+    display: inline-block;
     max-width: fit-content;
 }
 
-a.id-link > h2:hover {
-    display: block;
+h2 > a.id-link:hover {
+    display: inline-block;
     background-color: white;
     color: black;
     max-width: fit-content;
 }
 
-a.id-link > h3 {
-    display: block;
+h3 > a.id-link {
+    display: inline-block;
     max-width: fit-content;
 }
 
-a.id-link > h3:hover {
-    display: block;
+h3 > a.id-link:hover {
+    display: inline-block;
     background-color: white;
     color: black;
     max-width: fit-content;
