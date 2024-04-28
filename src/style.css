@@ -48,7 +48,7 @@ ul > li::before {
 
 ol {
     padding: 0;
-    padding-left: 4ch;
+    padhttps://faultlore.com/blah/c-isnt-a-language/ding-left: 4ch;
 }
 
 a {
@@ -182,7 +182,7 @@ strong::after {
 
 /* yes, this solution is stupid */
 
-@media only screen and (max-width: 45ch) {
+@media only screen and (max-width: 50ch) {
     header {
         text-align: left;
     }
@@ -192,7 +192,7 @@ strong::after {
     }
 }
 
-@media only screen and not (max-width: 45ch) {
+@media only screen and not (max-width: 50ch) {
     header > a.filesystem-root::before {
         content: "\2003";
     }
