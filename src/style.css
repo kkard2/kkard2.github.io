@@ -117,11 +117,13 @@ header::after {
 }
 
 .comment::before {
-    content: "\/* "
+    content: "\/* ";
+    white-space: nowrap;
 }
 
 .comment::after {
-    content: " */"
+    content: " */";
+    white-space: nowrap;
 }
 
 .comment {
@@ -136,12 +138,10 @@ a.id-link {
 }
 
 h1 > a.id-link {
-    display: inline-block;
     max-width: fit-content;
 }
 
 h1 > a.id-link:hover {
-    display: inline-block;
     background-color: white;
     color: black;
     max-width: fit-content;
@@ -149,24 +149,20 @@ h1 > a.id-link:hover {
 
 
 h2 > a.id-link {
-    display: inline-block;
     max-width: fit-content;
 }
 
 h2 > a.id-link:hover {
-    display: inline-block;
     background-color: white;
     color: black;
     max-width: fit-content;
 }
 
 h3 > a.id-link {
-    display: inline-block;
     max-width: fit-content;
 }
 
 h3 > a.id-link:hover {
-    display: inline-block;
     background-color: white;
     color: black;
     max-width: fit-content;
