@@ -101,6 +101,9 @@ template_file = "./template.html"
 if os.path.exists(dest_dir):
     shutil.rmtree(dest_dir)
 
+os.makedirs("./docs", exist_ok=True)
+open("./docs/.nojekyll", "a").close()
+
 print('process_templating...')
 
 for root, dirs, files in os.walk(start_dir):
