@@ -53,7 +53,6 @@ ol {
 
 a {
     color: #f0f;
-    white-space: nowrap;
 }
 
 a:hover {
@@ -74,6 +73,7 @@ code {
     background: #333;
     border: solid gray;
     border-width: 1px;
+    margin: -1px;
 }
 
 code.block {
@@ -112,8 +112,9 @@ header::after {
 }
 
 .scroll-container {
-    width: round(min(100%, 80ch), 1ch);
+    max-width: round(min(100%, 80ch), 1ch);
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .comment::before {
