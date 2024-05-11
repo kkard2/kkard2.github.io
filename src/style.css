@@ -73,6 +73,8 @@ code {
     background: #333;
     border: solid gray;
     border-width: 1px;
+    font-family: Consolas, monospace, monospace;
+    font-size: 16px;
     margin: -1px;
 }
 
