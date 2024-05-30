@@ -2,24 +2,24 @@
 <rss version="2.0">
     <channel>
         <title>kkard2/blog</title>
-        <link>https://kkard2.github.io/blog</link>
+        <link>https://kkard2.com/blog</link>
         <description>i will post sometimes i promise</description>
         <language>en-us</language>
         <lastBuildDate>Thu, 18 Apr 2024 18:48:07 +0200</lastBuildDate>
 
         <item>
             <title>unhealthy spaghetti</title>
-            <link>https://kkard2.github.io/blog/2024/04/18/spaghetti.html</link>
+            <link>https://kkard2.com/blog/2024/04/18/spaghetti.html</link>
             <pubDate>Thu, 18 Apr 2024 18:48:07 +0200</pubDate>
-            <guid>https://kkard2.github.io/blog/2024/04/18/spaghetti.html</guid>
+            <guid>https://kkard2.com/blog/2024/04/18/spaghetti.html</guid>
             <description>i like spaghetti</description>
         </item>
 
         <item>
             <title>rss</title>
-            <link>https://kkard2.github.io/blog/2024/02/03/rss.html</link>
+            <link>https://kkard2.com/blog/2024/02/03/rss.html</link>
             <pubDate>Sat, 03 Feb 2024 10:41:42 +0100</pubDate>
-            <guid>https://kkard2.github.io/blog/2024/02/03/rss.html</guid>
+            <guid>https://kkard2.com/blog/2024/02/03/rss.html</guid>
             <description>rss announcement</description>
         </item>
 
