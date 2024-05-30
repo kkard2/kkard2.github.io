@@ -6,7 +6,14 @@
         <description>i hate software</description>
         <language>en-us</language>
 
-        <lastBuildDate>Thu, 30 May 2024 08:33:50 +0200</lastBuildDate>
+        <lastBuildDate>Thu, 30 May 2024 09:34:41 +0200</lastBuildDate>
+
+        <item>
+            <title>flameshot</title>
+            <link>https://kkard2.com/software/2024/05/30/flameshot.html</link>
+            <pubDate>Thu, 30 May 2024 09:34:41 +0200</pubDate>
+            <guid>https://kkard2.com/software/2024/05/30/flameshot.html</guid>
+        </item>
 
         <item>
             <title>treesitter</title>
