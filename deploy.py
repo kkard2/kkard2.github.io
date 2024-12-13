@@ -46,6 +46,9 @@ def process_templating(src_file, dest_dir, start_dir, template_file):
                 elif '##title##' in template_line:
                     destination.write(
                             template_line.replace('##title##', title))
+                elif '##path##' in template_line:
+                    destination.write(template_line.replace(
+                        '##path##', relative_path.replace('\\', '/')))
                 else:
                     destination.write(template_line)
 
