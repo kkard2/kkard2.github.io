@@ -5,7 +5,11 @@
         <title>##title##</title>
         <link rel="stylesheet" href="/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Refresh" content="0; url='https://kkard2.com/##path##'" />
+        <script>
+            const currentFragment = window.location.hash; // e.g., "#a"
+            const newUrl = "https://site2.com/##path##" + currentFragment;
+            window.location.href = newUrl;
+        </script>
     </head>
     <body>
         <header>
@@ -17,6 +21,14 @@
             <a href="/ophs">/ophs</a>
         </header>
         <div>
+            <p>
+            OUTDATED SITE
+            </p>
+            <p>
+            if you are reading this, you disabled javascript execution; new
+            site is available under <a href="https://kkard2.com/">kkard2.com/</a>
+            </p>
+
             ##content##
         </div>
     </body>
